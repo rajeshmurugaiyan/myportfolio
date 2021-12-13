@@ -1,4 +1,8 @@
-function Sidebar() {
+import {AiFillGithub} from 'react-icons/ai'
+import {GoLocation} from 'react-icons/go'
+import {GiTie} from 'react-icons/gi'
+
+const Sidebar = () => {
     return (
         <div>
             <img 
@@ -12,7 +16,19 @@ function Sidebar() {
                 MOUROUGAYEN
             </h3>
             <p>Web Developer</p>
-            <p>Download Resume</p>
+            <p><GiTie className="w-6 h-6"/>Download Resume</p>
+            <div>
+                <div>
+                    <GoLocation/>
+                    <span>
+                        Paris, France
+                    </span>
+                </div>
+                <p>rajesh.sam94@gmail.com</p>
+                <p>1234567890</p>
+            </div>
+            <button>Email Me</button>
+            <button>Toggle Theme</button>
         </div>
     )
 }
